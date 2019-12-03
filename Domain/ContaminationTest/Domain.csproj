@@ -7,8 +7,8 @@
     <ProjectGuid>{0E0D2ADD-6553-4DB1-B376-5E548A825351}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContaminationTest</RootNamespace>
-    <AssemblyName>ContaminationTest</AssemblyName>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContaminationTest.cs" />
+    <Compile Include="DomainCore.cs" />
+    <Compile Include="Entities\CleaningTrial.cs" />
+    <Compile Include="IDomainInterface.cs" />
     <Compile Include="Persistence\IContaminationTestRepository.cs" />
+    <Compile Include="Persistence\IDomainRepository.cs" />
     <Compile Include="Persistence\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

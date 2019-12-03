@@ -7,8 +7,8 @@
     <ProjectGuid>{4CF6AB4F-6993-4F9B-A6E3-B134DFB6744D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContaminationTestRepository</RootNamespace>
-    <AssemblyName>ContaminationTestRepository</AssemblyName>
+    <RootNamespace>DomainRepository</RootNamespace>
+    <AssemblyName>DomainRepository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Applications.Core.Server">
+      <HintPath>..\..\Dependencies\Applications.Core.Server.dll</HintPath>
+    </Reference>
     <Reference Include="Pivotal.Core">
       <HintPath>..\..\Dependencies\Pivotal.Core.dll</HintPath>
     </Reference>
@@ -47,8 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Binding.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="DBTables\CleaningTrial.cs" />
+    <Compile Include="DBTables\ContaminationTest.cs" />
+    <Compile Include="DBTables\Table.cs" />
+    <Compile Include="DBTables\TableField.cs" />
+    <Compile Include="Mappings\ContaminationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ContaminationTestRepository.cs" />
+    <Compile Include="TypeMapper.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContaminationTest\Domain.csproj">
+      <Project>{0E0D2ADD-6553-4DB1-B376-5E548A825351}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

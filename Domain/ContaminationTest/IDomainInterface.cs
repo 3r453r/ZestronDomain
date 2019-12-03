@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainInterface
+namespace Domain
 {
-    public class Class1
+    public interface IDomainInterface
     {
     }
 }

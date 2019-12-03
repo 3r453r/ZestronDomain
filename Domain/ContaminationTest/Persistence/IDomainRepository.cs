@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Persistence
 {
-    public interface IUnitOfWork
+    public interface IDomainRepository
     {
-        void SaveChanges();
-        IContaminationTestRepository ContaminationTestRepository { get; }
+        IUnitOfWork GetUnitOfWork(object dataAccess, object systemServer);
     }
 }

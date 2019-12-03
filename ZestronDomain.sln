@@ -5,9 +5,7 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E614CFE9-49BB-4A27-817D-9793F942166B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainInterface", "Domain\DomainInterface\DomainInterface.csproj", "{951E61CE-2C59-465F-A6F9-2A9B70A24E28}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContaminationTest", "Domain\ContaminationTest\ContaminationTest.csproj", "{0E0D2ADD-6553-4DB1-B376-5E548A825351}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\ContaminationTest\Domain.csproj", "{0E0D2ADD-6553-4DB1-B376-5E548A825351}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerTasks", "ServerTasks", "{E708F39F-805A-4478-831F-71ADFBA4D7F8}"
 EndProject
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{951E61CE-2C59-465F-A6F9-2A9B70A24E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{951E61CE-2C59-465F-A6F9-2A9B70A24E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{951E61CE-2C59-465F-A6F9-2A9B70A24E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{951E61CE-2C59-465F-A6F9-2A9B70A24E28}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E0D2ADD-6553-4DB1-B376-5E548A825351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E0D2ADD-6553-4DB1-B376-5E548A825351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E0D2ADD-6553-4DB1-B376-5E548A825351}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,7 +36,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{951E61CE-2C59-465F-A6F9-2A9B70A24E28} = {E614CFE9-49BB-4A27-817D-9793F942166B}
 		{0E0D2ADD-6553-4DB1-B376-5E548A825351} = {E614CFE9-49BB-4A27-817D-9793F942166B}
 		{BB328117-4543-45B9-9D08-A9F9A18C26F0} = {E708F39F-805A-4478-831F-71ADFBA4D7F8}
 		{4CF6AB4F-6993-4F9B-A6E3-B134DFB6744D} = {E614CFE9-49BB-4A27-817D-9793F942166B}
